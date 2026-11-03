@@ -20,5 +20,5 @@ generate:
     @java -cp out {{ lox_generate_out }} com/craftinginterpreters/lox
 
 [group("lox")]
-run:
-    @java -cp out {{ lox_run }}
+run *args:
+    @java -cp out {{ lox_run }} {{ args }}
